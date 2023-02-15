@@ -2,3 +2,11 @@ bugs:
 black space between images on landing
 crosses don't rotate when in carousel->landing animation
 bg-pos sometimes jumps around
+
+
+size scaling:
+  aspect ratio = something
+  if viewport aspect ratio < 16/9
+    width = 20vw
+  else
+    height = 50vw

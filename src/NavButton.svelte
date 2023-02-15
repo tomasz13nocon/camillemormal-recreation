@@ -21,7 +21,7 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="text-4xl absolute w-1/2 h-full font-bold p-2 z-20 select-none cursor-auto {left ? 'left-0' : 'right-0'} {$$props.class || ''}" on:click>
-  <div class="absolute {left ? 'left-1/4' : 'right-1/4'} top-1/2">
+  <div class="absolute {left ? 'left-1/3' : 'right-1/3'} {left ? '' : '-translate-x-5'} top-1/2">
     <span
       class="bg-white/80 block h-[2px] w-5 transition-transform duration-700 ease-out-quint absolute"
       in:shrink={{ delay: 500, transforms: rotate1 }}
