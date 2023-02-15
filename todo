@@ -1,0 +1,4 @@
+bugs:
+black space between images on landing
+crosses don't rotate when in carousel->landing animation
+bg-pos sometimes jumps around
