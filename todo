@@ -10,3 +10,13 @@ size scaling:
     width = 20vw
   else
     height = 50vw
+
+
+
+cubic-bezier(.33,1.1,.75,1)
+cubic-bezier(.33,1.1,.76,.96)
+cubic-bezier(.04,1.12,.85,.98)
+cubic-bezier(0.15,0.82,0.22,0.99)
+cubic-bezier(0.12,1.07,0.5,0.97) - close
+cubic-bezier(0.12,1.07,0.5,0.99)
+cubic-bezier(.1,1.09,.5,.99)

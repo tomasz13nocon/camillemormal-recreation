@@ -8,9 +8,9 @@
   $: rotate1 = "rotate(" + (active * 90) + "deg)";
   $: rotate2 = "rotate(" + (90 + active * 90) + "deg)";
 
-  function shrink(node, { delay, transforms }) {
+  function shrink(node, { delay = 0, transforms }) {
     return {
-      delay: delay || 0,
+      delay: delay,
       duration: 500,
       css: (t, u) => {
         return `width: ${20 * t}px; transform: translateX(${20 * u * 0.5}px) ${transforms}`;
@@ -20,7 +20,7 @@
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="text-4xl absolute w-1/2 h-full font-bold p-2 z-20 select-none cursor-auto {left ? 'left-0' : 'right-0'} {$$props.class || ''}" on:click>
+<div class="text-4xl fixed top-0 w-1/2 h-full font-bold p-2 z-20 select-none cursor-auto {left ? 'left-0' : 'right-0'} {$$props.class || ''}" on:click>
   <div class="absolute {left ? 'left-1/3' : 'right-1/3'} {left ? '' : '-translate-x-5'} top-1/2">
     <span
       class="bg-white/80 block h-[2px] w-5 transition-transform duration-700 ease-out-quint absolute"
